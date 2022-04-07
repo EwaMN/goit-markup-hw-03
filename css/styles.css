@@ -16,6 +16,7 @@
 body {
     font-family: var(--main-font);
     color:var(--main-color);
+    width:1600px;
 }
 h1,
 h2,
@@ -59,9 +60,11 @@ img {
     padding-top: 94px
 }b--*/
 /* ==== HEADER ==== */
-.header .container{
+.header {
     background-color: var(--third-color);
     border-bottom: 1px solid var(--line-color);
+}
+.header .container{
     display:flex;
     align-items: center;
 }
@@ -76,8 +79,8 @@ img {
 .header .navigation-logo {
     padding-top: 24px;
     padding-bottom:25px;
-    margin-left: 215px;
-    margin-right: 93px;
+    margin-left: 0;
+    padding-right: 93px;
     color:var(--main-color);
 }
 .navigation-logo {
@@ -103,13 +106,16 @@ img {
 .navigation-list-item:not(:last-child) {
     margin-right: 46px;
 }
+.navigation-list-item:only(:last-child){
+    margin-right:371px;
+}
 
 .mailto {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.333;
     letter-spacing: 0.02em;
-    margin-left: auto;
+    padding-left: 371px;
     
 }
 .mailto:hover,
@@ -134,9 +140,10 @@ img {
 /* ==== END OF HEADER ==== */
 
 /* ==== MAIN ==== */
-
-.title .container{
+.title {
     background: var(--fifth-color);
+}
+.title .container{
     padding-top:200px;
     padding-bottom: 280px;
 }
@@ -175,10 +182,12 @@ img {
 .modal-button:active {
     color: var(--third-color);
 }
+.paragraphs {
+    background-color: var(--background-color);
+}
 .paragraphs .container  {
     padding-top: 94px;
     padding-bottom: 0;
-    background-color: var(--background-color);
 }
 .paragraphs-list  {
     display: flex;
@@ -206,9 +215,10 @@ img {
 }
 
 /* ==== about us ====*/
-
-.about .container {
+.about {
     background-color: var(--background-color);
+}
+.about .container {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -231,8 +241,11 @@ img {
 }
 /* ==== end about us ====*/
 /* ==== team ==== */
-.team .container {
+.team {
     background-color: var(--background-color2);
+}
+.team .container {
+    
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -276,8 +289,11 @@ img {
 /* ==== end workers ==== */
 /* ==== end MAIN ==== */
 /* ==== FOOTER ==== */
-.footer .container{
+.footer {
     background: var(--fifth-color);
+}
+.footer .container{
+    
     padding-top: 60px;
     padding-bottom: 60px;
     
@@ -321,14 +337,16 @@ img {
 /* === buttons ==== */
 
 /*-- PORTFOLIO--*/
-
+.menu-buttons{
+    background-color: var(--background-color);
+}
 .menu-buttons .container {
     display:flex;
     padding-left: 380px;
     align-items: center;
     padding-top: 94px;
     padding-bottom: 50px;
-    background-color: var(--background-color);
+    
 }
 .menu-button {
     font-weight: 500;
@@ -340,7 +358,6 @@ img {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     margin-right: 8px;
-    
 }
 
 .menu-button:hover,
@@ -349,12 +366,15 @@ img {
     background-color: var(--secondary-color);
     color: var(--third-color);
 }
+.menupics{
+    background-color: var(--background-color);
+}
 .menupics .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 94px;
-    background-color: var(--background-color);
+    
 }
 .menupic {
     background: var(--third-color);
